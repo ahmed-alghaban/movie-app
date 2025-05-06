@@ -27,6 +27,7 @@ const Login = () => {
         const result = await signUpProvider();
         if (result === true) {
             toastSuccessNotify('Logged in with Google successfully!');
+            navigate("/");
         } else {
             toastErrorNotify(result);
         }
