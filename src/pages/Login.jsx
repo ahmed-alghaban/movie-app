@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { ThemeContext } from '../context/ThemeContext'
 import { toastSuccessNotify, toastErrorNotify } from '../utils/toastNotify'
-import './login.css'
+import './Login.css'
 
 const Login = () => {
     const [email, setEmail] = useState('');

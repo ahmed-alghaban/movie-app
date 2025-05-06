@@ -3,7 +3,7 @@ import { ThemeContext } from '../context/ThemeContext'
 import { AuthContext } from '../context/AuthContext'
 import { toastSuccessNotify, toastErrorNotify, toastWarningNotify } from '../utils/toastNotify'
 import { Link, useNavigate } from 'react-router-dom'
-import './register.css'
+import './Register.css'
 
 const Register = () => {
     const [registerData, setRegisterData] = useState({
