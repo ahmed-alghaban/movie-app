@@ -51,13 +51,14 @@ const Register = () => {
     const btnHover = 'hover:bg-[#d7263d]';
     const btnText = 'text-white';
     const formBorder = isDark ? 'border-4 border-[#232323]' : 'border-4 border-white';
+    const pageBg = isDark ? 'bg-[#1a1a1a]' : 'bg-[#f8fafc]';
 
     return (
-        <div className={`min-h-screen ${isDark ? 'bg-gray-dark-main' : 'bg-[#f8fafc]'}`}>
+        <div className={`min-h-screen w-full ${pageBg}`} style={{ backgroundColor: isDark ? '#1a1a1a' : '#f8fafc' }}>
             <div className="h-[55px]"></div>
-            <div className={`flex-1 h-screen flex justify-center items-start ${isDark ? 'bg-gray-dark-main' : 'bg-[#f8fafc]'}`}>
+            <div className={`flex-1 h-screen flex justify-center items-start w-full ${pageBg}`} style={{ backgroundColor: isDark ? '#1a1a1a' : '#f8fafc' }}>
                 <div className="animate-border mt-[8vh] mx-auto w-[380px] rounded-[12px]">
-                    <div className={`${bgColor} ${formBorder} rounded-[12px]`}>
+                    <div className={`${bgColor} ${formBorder} rounded-[12px]`} style={{ backgroundColor: isDark ? '#28292D' : '#f4f8f9' }}>
                         <form onSubmit={handleSubmit} className="flex flex-col gap-4 px-8 py-10">
                             <h2 className="text-[#e84545] text-2xl font-bold text-center mb-4 tracking-[0.1em]">Register</h2>
                             <div className="relative z-0 w-full mb-6 group">

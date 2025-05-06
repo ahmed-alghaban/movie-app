@@ -48,7 +48,7 @@ const Login = () => {
     }
 
     // Color palettes
-    const bgColor = isDark ? 'bg-[##28292D]' : 'bg-[#f4f8f9]';
+    const bgColor = isDark ? 'bg-[#28292D]' : 'bg-[#f4f8f9]';
     const labelColor = isDark ? 'text-gray-200' : 'text-[#22223b]';
     const inputTextColor = isDark ? 'text-gray-100' : 'text-[#22223b]';
     const inputBorderColor = isDark ? 'border-[#e84545]' : 'border-[#e84545]';
@@ -59,11 +59,12 @@ const Login = () => {
     const btnHover = 'hover:bg-[#d7263d]';
     const btnText = 'text-white';
     const formBorder = isDark ? 'border-4 border-[#232323]' : 'border-4 border-white';
+    const pageBg = isDark ? 'bg-[#1a1a1a]' : 'bg-[#f8fafc]';
 
     return (
-        <div className={`min-h-screen ${isDark ? 'bg-gray-dark-main' : 'bg-[#f8fafc]'}`}>
+        <div className={`min-h-screen ${pageBg}`}>
             <div className="h-[55px]"></div>
-            <div className={`flex-1 h-screen flex justify-center items-start ${isDark ? 'bg-gray-dark-main' : 'bg-[#f8fafc]'}`}>
+            <div className={`flex-1 h-screen flex justify-center items-start ${pageBg}`}>
                 <div className="animate-border mt-[8vh] mx-auto w-[380px] rounded-[12px]">
                     <div className={`${bgColor} ${formBorder} rounded-[12px]`}>
                         <form
