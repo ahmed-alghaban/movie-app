@@ -41,6 +41,7 @@ const Login = () => {
         const result = await forgotPassword(email);
         if (result === true) {
             toastSuccessNotify('Password reset email sent!');
+            navigate("/");
         } else {
             toastErrorNotify(result);
         }
