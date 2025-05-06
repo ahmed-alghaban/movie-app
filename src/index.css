@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+}
+
+/* Rating Tags */
+.tag {
+  @apply px-2 py-1 rounded text-sm font-semibold;
+}
+
+.tag.orange {
+  @apply bg-orange-500;
+}
+
+.tag.red {
+  @apply bg-red-500;
+}
+
+.tag.green {
+  @apply bg-green-500;
+}
+
+/* Form Input */
+.form-input {
+  @apply rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* Button */
+.btn-danger-bordered {
+  @apply px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg border border-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+}
+
+.custom-linear-gradient::before {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.custom-linear-gradient::after {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-image: linear-gradient(90deg, transparent, #ff4b45, transparent) 1;
+  }
+
+  25% {
+    border-image: linear-gradient(180deg, transparent, #ff4b45, transparent) 1;
+  }
+
+  50% {
+    border-image: linear-gradient(270deg, transparent, #ff4b45, transparent) 1;
+  }
+
+  75% {
+    border-image: linear-gradient(360deg, transparent, #ff4b45, transparent) 1;
+  }
+
+  100% {
+    border-image: linear-gradient(90deg, transparent, #ff4b45, transparent) 1;
+  }
+}
+
+.animate-border {
+  animation: borderAnimation 4s linear infinite;
+  border-image-slice: 1;
+}
